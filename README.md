@@ -8,7 +8,7 @@ Overtime App
 
 -Post -> date:date rationale:text
 x User -> Devise
--AdminUser -> STI (single table inheritance)
+x AdminUser -> STI (single table inheritance)
 
 ## Features:
 -Approval Workflow
