@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
   <body>
@@ -20,6 +21,7 @@
       </div>
     </div>
 
+<%= js add_gritter(flash[:notice], title: "Overtime App | Notification", sticky: false, image: :notice ) %>
 
   </body>
 </html>
