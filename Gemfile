@@ -60,3 +60,4 @@ gem 'administrate', '~> 0.7.0'
 gem "bourbon"
 gem 'pundit', '~> 1.1'
 gem 'puma', '~> 3.4'
+gem 'twilio-ruby', '~> 4.13'
