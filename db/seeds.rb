@@ -3,15 +3,15 @@
                     password_confirmation: "asdfasdf", 
                     first_name: "Jon", 
                     last_name: "Snow",
-                    phone: "5555555333")
+                    phone: "55555555555")
 puts "1 User created"
 
-AdminUser.create(email: "admin@test.com", 
-                 password: "asdfasdf", 
-                 password_confirmation: "asdfasdf", 
-                 first_name: "Admin", 
-                 last_name: "Name",
-                 phone: "5555555333")
+AdminUser.create(email: "Marineepo@gmail.com", 
+                 password: "Buckeyefan1987$", 
+                 password_confirmation: "Buckeyefan1987$", 
+                 first_name: "Benjamin", 
+                 last_name: "Nicklaus",
+                 phone: "12393510443")
 
 puts "1 Admin created"
 

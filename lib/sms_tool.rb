@@ -1,6 +1,6 @@
 module SmsTool
-	account_sid = ENV['TWILIO_ACCOUNT_SID']
-	auth_token = ENV['TWILIO_ACCOUNT_SID']
+	account_sid = ENV['AC00eb4e7de93c7434625757d742c06efd']
+	auth_token = ENV['9d7c7042ea77df01c1389d4be6bcc413']
 	
 	@client = Twilio::REST::Client.new account_sid, auth_token
 	
@@ -13,5 +13,5 @@ module SmsTool
 	end
 end
 
-# SmsTool.send_sms(number: '5555555555', message: "Look at me I am in a text!")
+# SmsTool.send_sms(number: '12393510443', message: "Look at me I am in a text!")
 # do rails c and then pass in all of line 16 once you insert token and SID
