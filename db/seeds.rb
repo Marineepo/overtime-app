@@ -17,7 +17,7 @@ AdminUser.create(email: "admin@test.com",
 puts "1 Admin User created"
 
 100.times do |post|
-	Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, overtime_request: 2.5)
+	Post.create!(date: Date.today, rationale: "#{post} my name is Benjamin Nicklaus and I am posting information here to see if this works", user_id: @user.id, overtime_request: 2.5)
 end
 
 puts "100 Posts have been created"

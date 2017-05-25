@@ -11,9 +11,17 @@
 .homepage-block {
   background-color: #0606CC;
   color: white;
-  margin: 15px;
+  margin: 12px 42px 12px 42px;
   padding: 15px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+
+.pending-details {
+  font-weight: 900px;
+}
+
+.homepage-block:hover {
+  background-color: #172b63;
 }
