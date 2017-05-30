@@ -63,3 +63,4 @@ gem 'puma', '~> 3.4'
 gem 'twilio-ruby', '~> 4.13'
 gem 'dotenv-rails', :group => [:development, :test]
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+gem 'rails_12factor'
