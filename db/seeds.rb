@@ -16,12 +16,6 @@ AdminUser.create(email: "admin@test.com",
 
 puts "1 Admin User created"
 
-100.times do |post|
-	Post.create!(date: Date.today, rationale: "#{post} my name is Benjamin Nicklaus and I am posting information here to see if this works", user_id: @user.id, overtime_request: 2.5)
-end
-
-puts "100 Posts have been created"
-
 
 AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 6.days))
 AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 13.days))
@@ -29,3 +23,10 @@ AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 20.days
 
 
 puts "3 audit logs have been created"
+
+100.times do |post|
+	Post.create!(date: Date.today, rationale: "#{post} my name is Benjamin Nicklaus and I am posting information here to see if this works", user_id: @user.id, overtime_request: 2.5)
+end
+
+puts "100 Posts have been created"
+
