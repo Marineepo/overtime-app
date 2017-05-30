@@ -14,5 +14,21 @@ namespace :notification do
   	# exactly 10 characters
   	# all characters have to be a number
   end
+  
+  desc "Sends mail notification to managers (admin users) each to to inform of pending overtime request"
+  task manager_email: :environment do
+    ## 1. iterate over the list of pending overtime requests
+    # 2. check if there are request
+    # 2. iterate over the list admin users/managers
+    # 4. send the email to each admin
+    submitted_posts = Post.submitted 
+    admin_users = AdminUser.all
+    
+    if submitted_posts.count > 0
+      admin_users.each do |admin|
+        ManagerMailer.email(admin).deliver_now
+      end
+    end
+  end
 
 end
